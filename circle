@@ -1,0 +1,6 @@
+public class circle extends figure {
+    double pi = 3.14159265359;
+    @Override public double square(){
+        return pi*size*size;
+    }
+}
