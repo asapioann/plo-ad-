@@ -1,0 +1,5 @@
+public class triangle extends figure {
+    @Override public double square(){
+        return size*Math.sqrt(3)/4;
+    }
+}
