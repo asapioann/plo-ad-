@@ -1,0 +1,6 @@
+public class figure {
+    double size;
+    public double square(){
+        return size*size;
+    }
+}
