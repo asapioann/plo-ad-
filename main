@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+     kvadrat kvadrat = new kvadrat();
+     triangle triangle = new triangle();
+     circle circle = new circle();
+     int type;
+        System.out.println("Выберите тип фигуры" + "\n" +"1) квадрат"+"\n"+"2) треугольник"+ "\n"+"3) окружность");
+        type = scanner.nextInt();
+        switch (type){
+            case 1:
+                System.out.println("введите размер строны");
+                kvadrat.size = scanner.nextDouble();
+                System.out.println("площадь вашего квадрата = " + kvadrat.square());
+            case 2:
+                System.out.println("введите размер строны");
+                triangle.size = scanner.nextDouble();
+                System.out.println("площадь вашего треугольника = " + triangle.square());
+            case 3:
+                System.out.println("введите радиус");
+                circle.size = scanner.nextDouble();
+                System.out.println("площадь вашего круга = " + circle.square());
+        }
+    }
+}
